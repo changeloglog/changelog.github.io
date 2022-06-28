@@ -107,7 +107,7 @@ type User struct {
 err := db.QueryRow("SELECT COALESCE(NULL, '')").Scan(&u.Name)
 ```
 
-### 4） 不使用 NULL 值
+### 4) 不使用 NULL 值
 
 比如将数据库字段的默认值从 `NULL` 改为 `''`，如果你的字段值不会出现 `NULL`，则就不用处理这个问题了。
 

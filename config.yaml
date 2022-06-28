@@ -8,7 +8,7 @@ params:
   profileMode:
     enabled: true
     title: Changelog
-    subtitle: "Software, Database, InfoSec"
+    subtitle: "Programming, Database, Software"
     buttons:
       - name: Posts
         url: posts

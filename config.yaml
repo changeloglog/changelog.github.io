@@ -1,0 +1,13 @@
+baseURL: http://www.changelog.com.cn/
+languageCode: en-us
+title: Changelog
+theme: PaperMod
+
+params:
+  profileMode:
+    enabled: true
+    title: Changelog
+    subtitle: "Software, Database, InfoSec"
+    buttons:
+      - name: Posts
+        url: posts

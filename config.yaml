@@ -4,6 +4,7 @@ title: Changelog
 theme: PaperMod
 
 params:
+  env: production
   profileMode:
     enabled: true
     title: Changelog
@@ -11,3 +12,18 @@ params:
     buttons:
       - name: Posts
         url: posts
+
+markup:
+  highlight:
+    tabWidth: 2
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 20

@@ -27,11 +27,9 @@ jobs:
       - name: Deploy
         run: |
           curl -L -o ossutil https://gosspublic.alicdn.com/ossutil/1.7.13/ossutil64
-          ls
           chmod 755 ossutil
           echo [Credentials] > ossconfig
           echo accessKeyID=${{ secrets.OSS_ACCESS_KEY_ID }} >> ossconfig
           echo accessKeySecret=${{ secrets.OSS_ACCESS_KEY_SECRET }} >> ossconfig
           echo endpoint=${{ secrets.OSS_ENDPOINT }} >> ossconfig
-          cat ossconfig
           ./ossutil cp -r public/ ${{ secrets.OSS_TARGET }} -c ossconfig

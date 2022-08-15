@@ -28,6 +28,7 @@ jobs:
         run: |
           wget https://gosspublic.alicdn.com/ossutil/1.7.13/ossutil64
           ls
+          ./ossutil64 config
 
 #       - name: Deploy
 #         uses: peaceiris/actions-gh-pages@v3

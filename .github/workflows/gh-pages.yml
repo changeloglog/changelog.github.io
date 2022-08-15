@@ -32,4 +32,4 @@ jobs:
           echo accessKeyID=${{ secrets.OSS_ACCESS_KEY_ID }} >> ossconfig
           echo accessKeySecret=${{ secrets.OSS_ACCESS_KEY_SECRET }} >> ossconfig
           echo endpoint=${{ secrets.OSS_ENDPOINT }} >> ossconfig
-          ./ossutil cp -r public/ ${{ secrets.OSS_TARGET }} -c ossconfig
+          ./ossutil cp -rf public/ ${{ secrets.OSS_TARGET }} -c ossconfig

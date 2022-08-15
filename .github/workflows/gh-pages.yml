@@ -34,6 +34,7 @@ jobs:
           echo accessKeySecret=${{ secrets.OSS_ACCESS_KEY_SECRET }} >> ossconfig
           echo endpoint=${{ secrets.OSS_ENDPOINT }} >> ossconfig
           cat ossconfig
+          ./ossutil cp -r public/ ${{ secrets.OSS_TARGET }}
 
 #       - name: Deploy
 #         uses: peaceiris/actions-gh-pages@v3

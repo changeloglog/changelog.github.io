@@ -30,9 +30,9 @@ jobs:
           ls
           chmod 755 ossutil
           echo [Credentials] > ossconfig
-          echo accessKeyID= >> ossconfig
-          echo accessKeySecret= >> ossconfig
-          echo endpoint= >> ossconfig
+          echo accessKeyID=${{ secrets.OSS_ACCESS_KEY_ID }} >> ossconfig
+          echo accessKeySecret=${{ secrets.OSS_ACCESS_KEY_SECRET }} >> ossconfig
+          echo endpoint=${{ secrets.OSS_ENDPOINT }} >> ossconfig
           cat ossconfig
 
 #       - name: Deploy

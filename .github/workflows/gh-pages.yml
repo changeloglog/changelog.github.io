@@ -35,10 +35,3 @@ jobs:
           echo endpoint=${{ secrets.OSS_ENDPOINT }} >> ossconfig
           cat ossconfig
           ./ossutil cp -r public/ ${{ secrets.OSS_TARGET }} -c ossconfig
-
-#       - name: Deploy
-#         uses: peaceiris/actions-gh-pages@v3
-#         if: github.ref == 'refs/heads/main'
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           publish_dir: ./public
